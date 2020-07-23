@@ -1,15 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Important Assignment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <script>
-        
-    </script>
-    
+    <!-- Chapter 43 -48 -->
+    <!-- Task 1 -->
+    <!-- <a href="JavaScript:void(0)" onclick="popup()">This Is Link</a> -->
+
+    <!-- Task 2 -->
+    <!-- <div class="mobile">
+        <img src="Images/m1.jpg" alt="mobile 1" width="100px" onclick="msg()">
+        <img src="Images/m2.jpg" alt="mobile 2" width="100px" onclick="msg()">
+        <img src="Images/m3.jpg" alt="mobile 3" width="100px" onclick="msg()">
+    </div> -->
+
+    <!-- Task 3 -->
+    <!-- <table id="t">
+
+    </table> -->
+
+    <!-- Task 4 -->
+    <!-- <img src="Images/m1.jpg" onmouseover="src='Images/m2.jpg'" onmouseout="src='Images/m1.jpg'"> -->
+
+    <!-- Task 5 -->
+    <!-- <form >
+        <input type="text" id="countVal" value = "0">
+        <input type="button" value="Increase" onclick="inc()">
+        <input type="button" value="Decrease" onclick="dec()">
+    </form> -->
+
+    <!-- Chapter 49 -52 -->
+
+    <!-- Task 1 -->
+    <!-- <form id="f">
+        <label>Sign Up<br></label>
+        <label>
+            First Name
+        </label>
+        <input type="text" placeholder="Enter first name" name="fname" id="fname"><br>
+        <label>
+            Last Name
+        </label>
+        <input type="text" placeholder="Enter last name" name="lname" id="lname"><br>
+        <label>
+           Email
+        </label>
+        <input type="email" placeholder="Enter Email" name="email" id="e"><br>
+        <label>
+            Password
+        </label>
+        <input type="password" placeholder="Enter password" maxlength="10" id="p"><br>
+        <input type="button" value="Submit" onclick="foo()">
+    </form>
+    <p>:Your Information:</p>
+    <p id="df"></p>
+    <p id="de"></p> -->
+
+    <!-- Task 2 -->
+    <!-- <p id = "para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor dicta consectetur sint earum perferendis labore
+        dignissimos doloribus cumque voluptates distinctio maiores dolores mollitia minima, quis soluta, harum quae hic
+        rem?<a href="JavaScript:Void(0)" onclick="read()">Read more</a></p> -->
+
+
+    <!-- Task 3 -->
+    <!-- <form id="f">
+        <label>Sign Up<br></label>
+        <label>
+            First Name
+        </label>
+        <input type="text" placeholder="Enter first name" name="fname" id="fname" required><br>
+        <label>
+            Last Name
+        </label>
+        <input type="text" placeholder="Enter last name" name="lname" id="lname" required><br>
+        <label>
+           Email
+        </label>
+        <input type="email" placeholder="Enter Email" name="email" id="e" required><br>
+        <label>
+            Password
+        </label>
+        <input type="password" placeholder="Enter password" maxlength="10" id="p" required><br>
+        <input type="button" value="Submit" onclick="foo()">
+    </form>
+    <p>:Your Information:</p>
+    <p id="df"></p>
+    <button id="btn1" style="display: none;" onclick="edit1()">Edit</button><button style="display: none;" onclick="del()" id="btn2">DELETE</button>
+    <input type="text" style="display: none;" id="inp"> <input type="button" value="OK" onclick="fun()" style="display: none;" id="bt">
+    <p id="de"></p>
+    <button style="display: none;" id="btn3" onclick="edit2()">Edit</button><button style="display: none;"  onclick="del2()"id="btn4">DELETE</button>
+    <input type="text" style="display: none;" id="inp2"> <input type="button" value="OK" onclick="fun1()" style="display: none;" id="bt1"> -->
+
+
+
+    <!--Chapter 53 - 58 -->
+
+    <!-- <div class="row">
+        <div class="column">
+            <img src="Images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="Images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="Images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="Images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+                class="hover-shadow cursor">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="Images/img_nature_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="Images/img_snow_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="Images/img_mountains_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="Images/img_lights_wide.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+            <div class="column">
+                <img class="demo cursor" src="Images/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)"
+                    >
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Images/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)"
+                    >
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Images/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)"
+                    >
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Images/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)"
+                  >
+            </div>
+        </div>
+    </div> -->
+
+    <!--Chapter 58 - 67-->
+    <!-- <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content"> <label for="first-name">First Name</label> <input type="text"
+                id="first-name" /> <label for="last-name">Last Name</label> <input type="text" id="last-name" /> <label
+                for="email">Email</label> <input type="text" id="email" /> </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div> -->
 </body>
 <script src="app.js"></script>
+
 </html>
